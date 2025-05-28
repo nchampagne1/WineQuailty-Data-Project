@@ -15,10 +15,28 @@ This line graph shows the relationship between the Wine Density and pH. The dens
 ## 🍷 Data Visualization: Bar Graph - Feature Importance
 
 In Tree-Based Models (like Random Forest), feature importance is calculated based on the reduction in impurity (e.g., Gini impurity or entropy) when the feature is used to split data in decision trees. Features that result in larger reductions in impurity are considered more important. 
-In General: 
 - High importance: Features that significantly influence the target variable.
 - Low importance: Features that have little to no influence on predictions.
-
 ![image](https://github.com/user-attachments/assets/8e510be1-eccc-413d-a90a-25686d191239)
+
+## 🍷 Data Visualization: Decision Tree
+
+The accuracy score computed by the Decision Tree model is 0.58. 
+
+Although the score indicates it didn't predict very well. The score of 58% shows the model can predict wine quality better than random guessing. Some explanations for this score could be that the features don't fully capture all the factors that affect wine quality.
+![image](https://github.com/user-attachments/assets/c7b48b98-bb50-4745-9759-7ac8c0e8c111)
+
+
+## 🍷 Data Visualization: Random Forest
+
+The accuracy score computed by the Random Forest model is 0.70. Reflecting good overall performace.
+![image](https://github.com/user-attachments/assets/3f3127c5-55d9-4662-a5de-dac6f3400d30)
+
+## 🍷 Conclsuion
+We determined that RandomForest did a better job on our features because…..
+
+- Class Imbalance Handling: Random Forest performed better due to its ability to incorporate class_weight='balanced', addressing the underrepresented classes (3, 4, 8) more effectively than a single Decision Tree.
+
+- Reduced Overfitting: While the Decision Tree likely overfit the training data, Random Forest’s ensemble approach averaged multiple trees, reducing overfitting and providing a more generalized performance.
 
 
