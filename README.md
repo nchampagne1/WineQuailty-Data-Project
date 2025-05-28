@@ -26,13 +26,13 @@ The accuracy score computed by the Decision Tree model is 0.58.
 Although the score indicates it didn't predict very well. The score of 58% shows the model can predict wine quality better than random guessing. Some explanations for this score could be that the features don't fully capture all the factors that affect wine quality.
 ![image](https://github.com/user-attachments/assets/c7b48b98-bb50-4745-9759-7ac8c0e8c111)
 
-
 ## 🍷 Data Visualization: Random Forest
 
 The accuracy score computed by the Random Forest model is 0.70. Reflecting good overall performace.
 ![image](https://github.com/user-attachments/assets/3f3127c5-55d9-4662-a5de-dac6f3400d30)
 
 ## 🍷 Conclsuion
+
 We determined that RandomForest did a better job on our features because…..
 
 - Class Imbalance Handling: Random Forest performed better due to its ability to incorporate class_weight='balanced', addressing the underrepresented classes (3, 4, 8) more effectively than a single Decision Tree.
